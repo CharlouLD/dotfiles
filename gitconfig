@@ -48,4 +48,9 @@
   mergeoptions = --no-edit
 [user]
 	email = c.legras@me.com
-	name = Charles Eric Legras
+	name = Charlou
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
